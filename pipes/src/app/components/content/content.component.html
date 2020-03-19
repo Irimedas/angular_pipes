@@ -51,19 +51,17 @@
                     <img class="body-image" src="../../../assets/img/pipe_variables_ts.png" alt="">
                 </div>
             </div>
-
-            <h1>Números en castellano</h1>
-            <ul>
-                <li *ngFor="let valor of vector">
-                    {{valor | letras}}
-                </li>
-            </ul>
-            <h1>Números en inglés</h1>
-            <ul>
-                <li *ngFor="let valor of vector">
-                    {{valor | letras:'ingles'}}
-                </li>
-            </ul>
+            <div *ngIf="existIdiomas(); else noIdiomas">
+                <div  *ngFor="let idioma of idiomas" class="col-md-6">
+                    <h1>Números en {{idioma}}</h1>
+                    <ul>
+                        <li *ngFor="let valor of vector">
+                            {{valor | letras}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ng-template #noIdiomas><h3>Inserte idomas</h3></ng-template>
         </div>
     </div>
 </div>
