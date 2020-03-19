@@ -1,0 +1,4 @@
+.bg-body{
+    background-image: url("../assets/img/bg-image.jpg") !important;
+    background-size: cover;
+}
