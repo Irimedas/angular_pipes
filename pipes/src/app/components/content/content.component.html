@@ -22,29 +22,48 @@
                 <ul>TitleCase</ul>
                 <ul>Date</ul>
             </li>
-            <p>Como usarlos es tan simple como escribir | dentro de las llaves y luego el nombre del pipe en minuscula</p>
+            <p>Como usarlos es tan simple como escribir | dentro de las llaves y luego el nombre del pipe en minuscula
+            </p>
             <p>Ejemplo de upper case: {{ nombre | uppercase}}</p>
             <h3>Creación de Pipes</h3>
             <p>En nuestra consola de comando escribiremos el siguiente comando "ng generate pipe /pipes/$nombrePipe"
-            ó "ng  g p /pipes/$nombrePipe" en mi caso lo he llamado letras
+                ó "ng g p /pipes/$nombrePipe" en mi caso lo he llamado letras
             </p>
             <p>Nos creara si no existia previamente un directorio llamado pipes y dentro dos archivos.ts
                 uno es $nombrePipe.ts y el otro su archivo de pruebas,además, se modificara el archivo app.module.ts
                 importando nuestro pipe
             </p>
-            <p>Insertar imagen del letras.ts</p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="data-info">Función "transform" situada en el archivo "pipes_letras.ts"</p>
+                    <img class="body-image" src="../../../assets/img/pipe_letras_function.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <p class="data-info">Implementación de los "pipe" en el archivo "content.component.html"</p>
+                        <img class="body-image mb-5" src="../../../assets/img/pipe_letras_implement.png" alt="">
+                        <img class="body-image" src="../../../assets/img/pipe_uppercase_implement.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="data-info">Deficinión de variables predefinidas en el archivo "content.component.ts"</p>
+                    <img class="body-image" src="../../../assets/img/pipe_variables_ts.png" alt="">
+                </div>
+            </div>
+
             <h1>Números en castellano</h1>
             <ul>
-            <li *ngFor="let valor of vector">
-                {{valor | letras}}
-            </li>
+                <li *ngFor="let valor of vector">
+                    {{valor | letras}}
+                </li>
             </ul>
             <h1>Números en inglés</h1>
             <ul>
-            <li *ngFor="let valor of vector">
-                {{valor | letras:'ingles'}}
-            </li>
+                <li *ngFor="let valor of vector">
+                    {{valor | letras:'ingles'}}
+                </li>
             </ul>
-        </div>        
+        </div>
     </div>
 </div>
