@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
+
+  public displayNav: boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
+  openNav(){
+    this.displayNav = true;
   }
 
+  closeNav(){
+    this.displayNav = false;
+  }
 }
