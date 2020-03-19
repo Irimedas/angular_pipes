@@ -6,13 +6,6 @@ nav div ul.navbar-nav li:hover{
     background-color: #860045;
 }
 
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:focus,
-.navbar-default .navbar-nav>.open>a:hover{
-    background-color: #86f9ea;
-    color: #000000;
-}
-
 nav div ul.navbar-nav li a{
     color: #FFFFFF;
 }
@@ -27,7 +20,24 @@ nav div ul.navbar-nav li a:active{
     border: 0px;
 }
 
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+    background-color: #86f9ea;
+    color: #000000;
+}
+
 .navbar-default .navbar-nav>.active>a{
     background-color: #86f9ea !important;
     color: #000000;
+}
+
+ul.dropdown-menu{
+    background-color: #E20074; 
+    border-color: #860045;
+}
+
+ul.dropdown-menu li:hover,
+ul.dropdown-menu li a:hover{
+    background-color: #860045;
 }
