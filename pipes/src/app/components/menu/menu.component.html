@@ -1,18 +1,8 @@
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav" *ngIf="displayNav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="#">Sobre Nosotros</a>
+  <a href="#">Servicios</a>
+  <a href="#">Clientes</a>
+  <a href="#">Contacto</a>
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
