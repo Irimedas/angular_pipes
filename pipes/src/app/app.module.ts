@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ContentComponent } from './components/content/content.component';
+import { LetrasPipe } from './pipes/letras.pipe';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ContentComponent } from './components/content/content.component';
     HeaderComponent,
     FooterComponent,
     MenuComponent,
-    ContentComponent
+    ContentComponent,
+    LetrasPipe
   ],
   imports: [
     BrowserModule
