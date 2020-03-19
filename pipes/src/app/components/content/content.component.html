@@ -24,6 +24,27 @@
             </li>
             <p>Como usarlos es tan simple como escribir | dentro de las llaves y luego el nombre del pipe en minuscula</p>
             <p>Ejemplo de upper case: {{ nombre | uppercase}}</p>
+            <h3>Creación de Pipes</h3>
+            <p>En nuestra consola de comando escribiremos el siguiente comando "ng generate pipe /pipes/$nombrePipe"
+            ó "ng  g p /pipes/$nombrePipe" en mi caso lo he llamado letras
+            </p>
+            <p>Nos creara si no existia previamente un directorio llamado pipes y dentro dos archivos.ts
+                uno es $nombrePipe.ts y el otro su archivo de pruebas,además, se modificara el archivo app.module.ts
+                importando nuestro pipe
+            </p>
+            <p>Insertar imagen del letras.ts</p>
+            <h1>Números en castellano</h1>
+            <ul>
+            <li *ngFor="let valor of vector">
+                {{valor | letras}}
+            </li>
+            </ul>
+            <h1>Números en inglés</h1>
+            <ul>
+            <li *ngFor="let valor of vector">
+                {{valor | letras:'ingles'}}
+            </li>
+            </ul>
         </div>        
     </div>
 </div>
