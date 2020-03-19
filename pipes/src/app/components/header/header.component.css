@@ -1,20 +1,33 @@
-/* ---HEADER--- */
-header {
+nav{
+    color: #FFFFFF !important;
+}
+
+nav div ul.navbar-nav li:hover{
+    background-color: #860045;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+    background-color: #86f9ea;
+    color: #000000;
+}
+
+nav div ul.navbar-nav li a{
+    color: #FFFFFF;
+}
+nav div ul.navbar-nav li a:active{
+    color: #000000;
+}
+.navbar{
+    border-radius: 0px;
+}
+.navbar-default{
     background-color: #E20074;
-    color: white;
-    padding: 25px;
-    margin-bottom: 0px;
+    border: 0px;
 }
 
-header ul{
-    padding: 0px;
-}
-
-header ul li {
-    display: inline-block;
-    margin-right: 5px;
-}
-
-menu{
-    float: right;
+.navbar-default .navbar-nav>.active>a{
+    background-color: #86f9ea !important;
+    color: #000000;
 }
