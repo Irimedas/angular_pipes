@@ -1,0 +1,16 @@
+/* ---FOOTER--- */
+.footer {
+    background-color: #E20074;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    margin-bottom: 0px;
+}
+.footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 2px;
+}
+.footer ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
